@@ -48,7 +48,9 @@ spec:
          - name: GIT_SYNC_REPO
            value: https://github.com/manotasce/data_engineering.git
          - name: GIT_SYNC_DEST
-           value: repo     
+           value: repo  
+         - name: GIT_SYNC_BRANCH
+           value: master     
       - image: jupyter/scipy-notebook:f1811928b3dd
         name: scipy-notebook
         resources: {}
