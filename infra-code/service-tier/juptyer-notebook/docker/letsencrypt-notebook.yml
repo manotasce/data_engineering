@@ -6,7 +6,7 @@
     
     services:
       notebook:
-        build: .
+        build: ""
         image: my-notebook
         container_name: ${NAME}
         volumes:
