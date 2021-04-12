@@ -1,6 +1,7 @@
-# Infrastructure as Code Project
-This section is a good place to start develop and deploy all infra I need for projects.
-
+# Development Sandbox
+As a data engineer in a team, usually a stack is needed in order
+to solve business issues. I created this project to host common
+service tier to handle data in hypotetic scenario
 
 ## Jupyter Notebook
 Build my own Jupyter Notebook for play with data on my on computer. I took the docker-compose code base from [docker-stack for Jupyter](https://github.com/jupyter/docker-stacks)] 
