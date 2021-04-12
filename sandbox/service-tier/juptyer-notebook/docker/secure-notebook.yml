@@ -6,25 +6,18 @@
     
     services:
       notebook:
-        build: .
+        build: ""
         image: my-notebook
         container_name: ${NAME}
         volumes:
           - "work:/home/jovyan/work"
-          - "secrets:/etc/letsencrypt"
         ports:
           - "${PORT}:8888"
         environment:
           USE_HTTPS: "yes"
           PASSWORD: ${PASSWORD}
-        command: >
-          start-notebook.sh
-          --NotebookApp.certfile=/etc/letsencrypt/fullchain.pem
-          --NotebookApp.keyfile=/etc/letsencrypt/privkey.pem
+    
     volumes:
       work:
         external:
           name: ${WORK_VOLUME}
-      secrets:
-        external:
-          name: ${SECRETS_VOLUME}
